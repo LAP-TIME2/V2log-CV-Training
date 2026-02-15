@@ -176,7 +176,7 @@ from roboflow import Roboflow
 
 rf = Roboflow(api_key="여기에_API키_입력")
 project = rf.workspace().project("v2log-weight-plates")
-dataset = project.version(1).download("yolov11")
+dataset = project.version(2).download("yolov8")
 ```
 
 > **API 키 찾는 법**: Roboflow → 우측 상단 프로필 → Settings → API Key → 복사
@@ -333,4 +333,4 @@ C:\Dev\V2log\assets\models\        ← 앱에서 사용 (Phase 2B)
 | mAP가 안 오름 | 데이터 부족 or 라벨 오류 | 라벨 품질 점검 + 사진 추가 |
 | 특정 클래스만 낮음 | 해당 클래스 사진 부족 | 해당 무게만 200~300장 추가 |
 | .tflite 변환 실패 | Ultralytics 버전 문제 | `!pip install ultralytics --upgrade` |
-| 모델 크기 너무 큼 | 모델 선택 문제 | `yolo11n`(nano) 사용 확인 |
+| 모델 크기 너무 큼 | 모델 선택 문제 | `yolo26n`(nano) 사용 확인 |

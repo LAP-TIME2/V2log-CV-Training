@@ -20,14 +20,14 @@ from roboflow import Roboflow
 
 rf = Roboflow(api_key="YOUR_API_KEY")  # Roboflow에서 발급
 project = rf.workspace().project("v2log-weight-plates")
-dataset = project.version(1).download("yolov11")
+dataset = project.version(2).download("yolov8")
 ```
 
 ## 5. 세 번째 셀: 학습 실행
 ```python
 from ultralytics import YOLO
 
-model = YOLO('yolo11n.pt')
+model = YOLO('yolo26n.pt')
 model.train(data='data.yaml', epochs=100, imgsz=640, batch=16)
 ```
 

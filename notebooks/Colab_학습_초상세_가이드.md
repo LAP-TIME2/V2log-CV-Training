@@ -245,7 +245,9 @@ print(f"위치: Drive > V2log-CV-Training > results")
 
 ### "yolo26n.pt not found"
 - → YOLO26 모델이 아직 ultralytics에 안 올라온 경우
-- → 해결: 셀 4의 코드에서 `yolo11n.pt` 사용 (이미 대비해놨음)
+- → 해결: `!pip install ultralytics --upgrade` 실행 후 재시도
+- → 그래도 안 되면: ultralytics GitHub에서 최신 릴리즈 확인
+- → **yolo11n.pt로 대체하지 마세요!** 모델이 다릅니다. Claude에게 물어보세요.
 
 ### mAP50이 너무 낮을 때 (< 60%)
 - → 데이터가 부족하거나, 라벨링이 부정확할 수 있음

@@ -1,5 +1,5 @@
 """
-V2log Phase 2A - YOLO11 모델 변환 (.pt → .tflite)
+V2log Phase 2A - YOLO26 모델 변환 (.pt → .tflite)
 ===================================================
 
 학습 완료 후 실행. 변환된 .tflite 파일을 V2log 앱에 넣으면 됨.
