@@ -147,8 +147,9 @@ print(f"클래스: {data['names']}")
 ```python
 from ultralytics import YOLO
 
-# YOLO26 nano 모델 로드 (자동 다운로드)
-model = YOLO('yolo11n.pt')  # yolo26n이 없으면 yolo11n 사용
+# YOLO26-N 모델 로드 (2026년 1월 출시, 최신 모델)
+# 첫 실행 시 자동 다운로드됨 (~6MB)
+model = YOLO('yolo26n.pt')
 
 # 학습 시작!
 results = model.train(
