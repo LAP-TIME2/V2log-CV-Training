@@ -1,0 +1,20 @@
+# YOLO26 Weight Plate Detection - Dataset Config
+# V2log Phase 2A: 헬스장 플레이트 무게 자동 감지
+
+path: ./data
+train: images/train
+val: images/val
+test: images/test
+
+# 9 classes - 플레이트 무게별 + 바벨
+nc: 9
+names:
+  0: plate_25kg
+  1: plate_20kg
+  2: plate_15kg
+  3: plate_10kg
+  4: plate_5kg
+  5: plate_2.5kg
+  6: plate_1.25kg
+  7: barbell
+  8: empty_barbell

@@ -1,0 +1,29 @@
+# 데이터셋 (Roboflow에서 다시 다운로드 가능)
+*.zip
+data/
+_temp_upload/
+
+# 데이터셋 폴더들 (Roboflow 다운로드)
+1. gym equipment object detection.v1i.yolov11/
+2. All Gym Equipment.v2i.yolov11/
+3. Weightlifting Plates.v11i.yolov11/
+4. Weights Plates.v1i.yolov11/
+barbell-detector.v1i.yolov11/
+Gym Detection.v2i.yolov11/
+
+# 학습된 모델 (Colab에서 재생성)
+models/
+runs/
+*.pt
+*.tflite
+*.onnx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 기타
+nul
+.DS_Store
